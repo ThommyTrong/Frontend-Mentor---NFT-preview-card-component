@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+/* flex container */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: hsl(216, 50%, 16%);
+
+  box-shadow: 0 0 10px #fff;
+}
+.Picture-Div {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 300px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.eye {
+  object-fit: cover;
+  object-position: center;
+}
+.eye-div {
+  position: absolute;
+  inset: 0;
+  background-color: hsl(178, 100%, 50%, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.equi {
+  box-sizing: border-box;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.eye,
+.eye-div {
+  transition: 200ms ease-in-out;
+}
+
+.Picture-Div > .eye-div {
+  opacity: 0;
+}
+.Picture-Div:hover > .eye-div {
+  opacity: 1;
+}
+
+.Text-Div {
+  background-color: hsl(216, 50%, 16%);
+  /* border: 6px solid indigo; */
+  width: 350px;
+  height: auto;
+}
+.Made-Div {
+  box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0 0px 10px 10px;
+}
+.Made-Div pb {
+  display: inline;
+  width: 20px;
+}
+
+span,
+p,
+h1 {
+  display: flex;
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  margin: 20px;
+  margin-top: 0;
+}
+span {
+  line-height: 1.5em;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+.third-Div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  margin-top: 0;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+h1:hover,
+.arne:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.icon,
+.icon-dia {
+  display: flex;
+  margin: 0;
+  float: right;
+}
+
+.icon-dia {
+  color: hsl(178, 100%, 50%);
+}
+
+.etherum {
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.Made-Div {
+  display: flex;
+}
+
+.pb {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 5px 20px 20px 20px;
+}
+
+.creation,
+.arne {
+  margin: 0;
+  line-height: 50px;
+}
+
+.arne {
+  color: white;
+}
+
+footer {
+  display: flex;
+  color: hsl(215, 51%, 70%);
+  position: fixed;
+  bottom: 10px;
+  justify-content: center;
+  width: 100%;
+}
